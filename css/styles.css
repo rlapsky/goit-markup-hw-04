@@ -109,7 +109,10 @@ header {
 /*hero*/
 
 .hero {
-  background-color: var(--prymeri-bgc--);
+  background-size: cover;
+  background-position: center;
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero.jpg);
   text-align: center;
   display: flex;
   padding-top: 200px;
@@ -129,6 +132,39 @@ header {
 }
 .hero button {
   margin-top: 30px;
+}
+
+.antenna::before,
+.clock::before,
+.diagram::before,
+.astronaut::before {
+  display: flex;
+  content: "";
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.antenna::before {
+  background-image: url("../images/antenna\ .svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.clock::before {
+  background-image: url("../images/clock\ .svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.diagram::before {
+  background-image: url("../images/diagram\ .svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.astronaut::before {
+  background-image: url("../images/astronaut\ .svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /*feature*/
