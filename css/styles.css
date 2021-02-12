@@ -38,9 +38,23 @@ header {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.site-nav li:not(:last-child),
-.auth-nav li:not(:last-child) {
+.site-nav li:not(:last-child) {
   margin-right: 50px;
+}
+.auth-nav li:not(:last-child) {
+  margin-right: 30px;
+}
+.auth-nav li {
+  display: flex;
+}
+.auth-nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.auth-nav svg {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 .navigate .auth-nav {
@@ -248,9 +262,15 @@ header {
 
 .team {
   background-color: var(--white-bgc--);
-  display: flex;
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.icon-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
 }
 
 .team-list {
@@ -260,7 +280,7 @@ header {
 
 .profile-card {
   padding-top: 30px;
-  padding-bottom: 30px;
+  margin-bottom: 16px;
 }
 
 .team h2 {
@@ -296,7 +316,7 @@ header {
   letter-spacing: 0.03em;
 }
 
-.team li {
+.team-card {
   background-color: var(--wite-color--);
   width: 270px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -304,18 +324,80 @@ header {
   border-radius: 0px 0px 4px 4px;
   text-align: center;
 }
-.team li:not(last-child) {
-  margin-right: 30px;
+
+.social-icons-items {
+  justify-content: space-between;
+  display: flex;
+  padding-left: 32px;
+  padding-bottom: 30px;
+  padding-right: 32px;
+}
+
+.social-icons-items a {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #AFB1B8;
+}
+
+.social-icons-items a:focus,
+.social-icons-items a:hover {
+  background-color: var(--accent-color--);
+  fill:var(--wite-color--);
+}
+
+.regular h2{
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding-top: 94px;
+  margin-bottom: 50px;
+}
+.regular ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 94px;
+
+}
+.regular a { 
+  display: flex;
+  border: 1px solid #AFB1B8;
+  fill: #AFB1B8 ;
+  border-radius: 4px;
+  width: 170px;
+  height: 90px;
+  justify-content: center;
+  align-items: center;
+}
+
+.regular a:focus,
+.regular a:hover {
+  border-color: var(--accent-color--);
+  fill:var(--accent-color--);
 }
 
 /*footer*/
+
 .logo {
   display: inline-block;
 }
 footer {
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+footer .container {
   padding-top: 60px;
   padding-bottom: 60px;
-  display: block;
 }
 
 address {
@@ -338,6 +420,44 @@ footer .auth-nav li:not(:last-child) {
 footer {
   background-color: var(--prymeri-bgc--);
 }
+.join {
+  display: flex;
+  flex-direction: row;
+}
+
+.social-icons-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.social-icons-footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: #ffffff;
+}
+
+.social-icons-footer a:focus,
+.social-icons-footer a:hover {
+  background-color:var(--accent-color--);
+}
+
+footer h2{
+  color: var(--wite-color--);
+font-family: "Roboto";
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.2px;
+letter-spacing: 0.03em;
+text-transform: uppercase;}
+
 
 /*portfolio*/
 .portfolio_hdr {
@@ -388,6 +508,10 @@ footer {
 
 .portfolio-main-conteiner img {
   display: block;
+}
+.portfolio-main-conteiner a {
+  display: block;
+  text-decoration: none;
 }
 
 /*кнопки портфолио навигация*/
