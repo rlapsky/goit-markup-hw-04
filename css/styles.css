@@ -7,10 +7,11 @@
   --prymeri-bgc--: #2f303a;
   --white-bgc--: #f5f4fa;
 }
-
 body {
   display: block;
   box-sizing: border-box;
+
+
 }
 
 /*header*/
@@ -23,6 +24,7 @@ header {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0px auto;
+
 }
 .navigate {
   display: flex;
@@ -112,6 +114,7 @@ header {
 .auth-nav .link-auth:hover,
 .auth-nav .link-auth:focus {
   color: var(--accent-color--);
+  transition-duration: .2s;
 }
 
 /* main */
@@ -128,7 +131,6 @@ header {
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero.jpg);
   text-align: center;
-  display: flex;
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -264,13 +266,16 @@ header {
   background-color: var(--white-bgc--);
   padding-top: 94px;
   padding-bottom: 94px;
+  margin: 0 auto;
 }
 
 .icon-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-
+}
+.icon-list>li{
+  margin: 0 15px;
 }
 
 .team-list {
@@ -347,6 +352,7 @@ header {
 .social-icons-items a:hover {
   background-color: var(--accent-color--);
   fill:var(--wite-color--);
+  transition-duration: .3s;
 }
 
 .regular h2{
@@ -382,22 +388,20 @@ header {
 .regular a:hover {
   border-color: var(--accent-color--);
   fill:var(--accent-color--);
+  transition-duration: .3s;
 }
 
 /*footer*/
+footer{
+  background-color: var(--prymeri-bgc--);
 
-.logo {
-  display: inline-block;
 }
-footer {
 
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
 footer .container {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  display: flex;
+  justify-content: start;
+padding-top: 60px;
+padding-bottom: 60px;
 }
 
 address {
@@ -408,47 +412,51 @@ address {
   font-size: 14px;
   line-height: 1.7;
 }
-.address {
+
+
+footer .auth-nav>li{
+  margin-top: 9px;
+}
+
+footer address{
   margin-top: 20px;
-  margin-bottom: 9px;
 }
 
-footer .auth-nav li:not(:last-child) {
-  margin-bottom: 9px;
-}
-
-footer {
-  background-color: var(--prymeri-bgc--);
-}
 .join {
-  display: flex;
-  flex-direction: row;
+  margin-left: 70px;
+  padding-top: 9px;
 }
 
 .social-icons-footer {
   display: flex;
-  justify-content: center;
   align-items: center;
-
 }
+.social-icons-footer >li {
+margin-right: 10px;
+width: 44px;
+height: 44px;
+}
+
 
 .social-icons-footer a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 44px;
-  height: 44px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   fill: #ffffff;
+  margin-top: 20px;
 }
 
 .social-icons-footer a:focus,
 .social-icons-footer a:hover {
   background-color:var(--accent-color--);
+  transition-duration: .3s;
 }
 
-footer h2{
+footer h3{
   color: var(--wite-color--);
 font-family: "Roboto";
 font-style: normal;
@@ -456,13 +464,10 @@ font-weight: 700;
 font-size: 14px;
 line-height: 1.2px;
 letter-spacing: 0.03em;
-text-transform: uppercase;}
-
-
-/*portfolio*/
-.portfolio_hdr {
-  background-color: var(--wite-color--);
+text-transform: uppercase;
+display: initial;
 }
+
 .logo-white {
   color: var(--wite-color--);
 }
@@ -471,6 +476,13 @@ text-transform: uppercase;}
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 }
+
+
+/*portfolio*/
+.portfolio_hdr {
+  background-color: var(--wite-color--);
+}
+
 
 .portfolio-list {
   display: flex;
@@ -488,23 +500,27 @@ text-transform: uppercase;}
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-.portfolio-main-conteiner ul {
   margin: -15px;
 }
 
 .portfolio-main-conteiner li {
   margin: 15px;
+  
+}
+.portfolio-main-conteiner li:hover{
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  transition-duration: .3s;
 }
 
-.portfolio-main-conteiner div {
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 24px;
-}
+  .portfolio-main-conteiner div {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    background: #FFFFFF;
+    border: 1px  solid #EEEEEE;
+border-top: none;
+  }
 
 .portfolio-main-conteiner img {
   display: block;
@@ -541,6 +557,7 @@ text-transform: uppercase;}
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   padding: 6px 22px;
+  transition-duration: .3s;
 }
 
 /*Список Робот*/
