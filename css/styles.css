@@ -9,9 +9,6 @@
 }
 body {
   display: block;
-  box-sizing: border-box;
-
-
 }
 
 /*header*/
@@ -24,7 +21,7 @@ header {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0px auto;
-
+  box-sizing: border-box;
 }
 .navigate {
   display: flex;
@@ -60,7 +57,7 @@ header {
 }
 
 .navigate .auth-nav {
-  margin-left: 331px;
+  margin-left: 301px;
 }
 
 .navigate .auth-nav {
@@ -115,19 +112,12 @@ header {
 .auth-nav .link-auth:focus {
   color: var(--accent-color--);
   transition-duration: .2s;
-}
-
-/* main */
-
-.portfolio-main {
-  padding-bottom: 94px;
+  outline: 0;
 }
 
 /*hero*/
 
 .hero {
-  background-size: cover;
-  background-position: center;
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero.jpg);
   text-align: center;
@@ -352,6 +342,7 @@ header {
 .social-icons-items a:hover {
   background-color: var(--accent-color--);
   fill:var(--wite-color--);
+  outline: 0;
   transition-duration: .3s;
 }
 
@@ -388,6 +379,7 @@ header {
 .regular a:hover {
   border-color: var(--accent-color--);
   fill:var(--accent-color--);
+  outline: 0;
   transition-duration: .3s;
 }
 
@@ -454,6 +446,7 @@ height: 44px;
 .social-icons-footer a:hover {
   background-color:var(--accent-color--);
   transition-duration: .3s;
+  outline: 0;
 }
 
 footer h3{
@@ -471,14 +464,25 @@ display: initial;
 .logo-white {
   color: var(--wite-color--);
 }
+.logo:focus{
+  outline: 0;
+}
 
 .link-auth.footer {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+  font-weight: 400;
 }
 
 
 /*portfolio*/
+
+.portfolio {
+  padding-bottom: 94px;
+  padding-top: 94px;
+  background-color: var(--accent-bgc--);
+}
+
 .portfolio_hdr {
   background-color: var(--wite-color--);
 }
@@ -496,45 +500,44 @@ display: initial;
   margin-bottom: 35px;
 }
 
-.portfolio-main-conteiner {
+.portfolio-conteiner {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: -15px;
 }
 
-.portfolio-main-conteiner li {
+.portfolio-conteiner li {
   margin: 15px;
   
 }
-.portfolio-main-conteiner li:hover{
+.portfolio-conteiner a:hover,
+.portfolio-conteiner a:focus{
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+  outline: 0;
   transition-duration: .3s;
+  outline: 0;
 }
 
-  .portfolio-main-conteiner div {
+  .portfolio-conteiner div {
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 24px;
     background: #FFFFFF;
     border: 1px  solid #EEEEEE;
-border-top: none;
   }
 
-.portfolio-main-conteiner img {
+.portfolio-conteiner img {
   display: block;
 }
-.portfolio-main-conteiner a {
+.portfolio-conteiner a {
   display: block;
   text-decoration: none;
 }
 
 /*кнопки портфолио навигация*/
-.portfolio-main {
-  background-color: var(--accent-bgc--);
-  padding-top: 94px;
-}
+
 .portfolio-buton {
   border-radius: 4px;
   padding: 6px 22px;
@@ -556,8 +559,8 @@ border-top: none;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-  padding: 6px 22px;
   transition-duration: .3s;
+  outline: 0;
 }
 
 /*Список Робот*/
