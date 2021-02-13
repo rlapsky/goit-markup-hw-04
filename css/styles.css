@@ -119,7 +119,7 @@ header {
 
 .hero {
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/hero.jpg);
+    url(../images/hero.jpg) no-repeat center;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
